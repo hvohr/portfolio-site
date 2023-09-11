@@ -112,7 +112,7 @@
 
 .swingimage {
   height: 50vh;
-  width: 50vw;
+  width: 35vw;
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
   -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
