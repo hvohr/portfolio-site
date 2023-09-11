@@ -1,3 +1,7 @@
-.App {
-  text-align: center;
+html, body {
+  /* min-height: 100vh; */
+  margin: 0px;
+  background-image: url('../images/rustic-brick-wall-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat
 }
