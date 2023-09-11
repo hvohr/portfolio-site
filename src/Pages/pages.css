@@ -14,7 +14,6 @@
 .main {
   display: flex;
   margin-left: 50px;
-  width: 100vw;
   height: 100vh;
   flex-direction: column;
   align-content: center;
@@ -93,4 +92,29 @@
   56% {
     opacity: 1;
   }
+}
+
+.home-container {
+  display: flex;
+}
+
+@-webkit-keyframes swinging{
+  0%{-webkit-transform: rotate(10deg);}
+  50%{-webkit-transform: rotate(-5deg)}
+  100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+  0%{transform: rotate(10deg);}
+  50%{transform: rotate(-5deg)}
+  100%{transform: rotate(10deg);}
+}
+
+.swingimage {
+  height: 50vh;
+  width: 50vw;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
 }
