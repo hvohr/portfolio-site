@@ -13,21 +13,16 @@
 
 .main {
   display: flex;
-  position: relative;
-  top: 50%;
-  left: 40%;
+  margin-left: 50px;
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
   align-content: center;
-  justify-items: center;
-  width: 50vw;
-  height: auto;
+  justify-content: center;
   font-family: "neontubes";
-  font-size: 16vw;
   text-align: center;
   white-space: nowrap;
 }
-
 
 .main,
 .name {
@@ -46,8 +41,12 @@
   animation: blink 2s infinite alternate;
 }
 
+.name-container {
+  font-size: 120px;
+}
+
 .main .title-container {
-  font-size: 11vw;
+  font-size: 70px;
   color: #d4eaff;
   text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
 }
@@ -93,16 +92,5 @@
 
   56% {
     opacity: 1;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .main {
-    width: 400px;
-    font-size: 120px;
-  }
-
-  .main .title-container {
-    font-size: 70px;
   }
 }
