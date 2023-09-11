@@ -14,7 +14,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
 }
 
 .about-button,
@@ -22,20 +21,21 @@ nav {
 .contact-button {
   font-family: 'neontubes';
   color: #ebedf0;
-  margin: 5px;
+  margin: 10px;
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-shadow: 0 0 0 transparent, 0 0 10px #a5adb6, 0 0 20px rgba(145, 154, 162, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #63676a;
 }
-
+ 
 .home-button {
   font-family: 'neontubes';
-  margin: 5px;
-  text-decoration: none;
   font-size: 2.5vw;
-  border: 2px solid #ff003c;
-  box-shadow: 0 0 0 transparent, 0 0 10px #a5adb6, 0 0 20px rgba(145, 154, 162, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #63676a;
-  border-radius: 10px;
-  padding: 5px;
-  color: #d4eaff;
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid #ebedf0;
+  color: #ebedf0;
+  background: none;
+  box-shadow: 0 0 0 transparent, 0 0 10px #d5d9dd, 0 0 20px rgba(213, 217, 220, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #becbd4;
   text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;}
