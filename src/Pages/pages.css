@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'neontubes';
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: black;
+}
+
+ .name-container,
+.title-container {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 50vw;
+  height: auto;
+  font-family: "neontubes";
+  font-size: 16vw;
+  text-align: center;
+  white-space: nowrap;
+}
+.main,
+.name {
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+}
+
+.first-last {
+   -webkit-animation: blink 5s infinite alternate;
+          animation: blink 3s infinite alternate;
+}
+
+.name,
+.title-last {
+    -webkit-animation: blink 4s infinite alternate;
+          animation: blink 2s infinite alternate;
+}
+
+.main .title-container {
+  font-size: 11vw;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+}
+
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0.8;
+  }
+  53% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0.2;
+  }
+  56% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main {
+    width: 400px;
+    font-size: 100px;
+  }
+ 
+  .main .title-container {
+    font-size: 50px;
+  }
+}
