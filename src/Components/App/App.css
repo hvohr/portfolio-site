@@ -9,3 +9,25 @@ html, body {
 .App {
   height: 100vh;
 }
+
+nav {
+  margin: 5px;
+}
+
+.about-button,
+.projects-button {
+  font-family: 'neontubes';
+  color: #ebedf0;
+  text-decoration: none;
+  font-size: 4vw;
+  text-shadow: 0 0 0 transparent, 0 0 10px #a5adb6, 0 0 20px rgba(145, 154, 162, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #63676a;
+}
+
+.home-button {
+  font-family: 'neontubes';
+  color: #ffd9e2;
+  text-decoration: none;
+  font-size: 4vw;
+  border: 2px solid #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+}
