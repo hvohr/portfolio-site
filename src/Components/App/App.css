@@ -28,6 +28,15 @@ nav {
   text-shadow: 0 0 0 transparent, 0 0 10px #a5adb6, 0 0 20px rgba(145, 154, 162, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #63676a;
 }
 
+.about-button.active,
+.contact-button.active,
+.projects-button.active {
+  animation: buzz 0.01s infinite alternate;
+  color: #ffffff;
+  transform: scale(1.1); 
+  text-shadow: 0 0 0 transparent, 0 0 5px #d5d9dd, 0 0 10px rgba(213, 217, 220, 0.5), 0 0 20px #788088, 0 0 5px #7f8589, 0 0 100px #aeb1b3, 0 0 150px #b0bcc7, 0 0 250px #becbd4;
+}
+
 .about-button:hover,
 .contact-button:hover,
 .projects-button:hover {
