@@ -1,11 +1,15 @@
-html,
-body {
+html, body {
   min-height: 100vh;
   margin: 0px;
   background-image: url('../images/rustic-brick-wall-background.jpg');
   background-size: cover;
   background-repeat: no-repeat
 }
+
+ body {
+  min-height: 100vh;
+  margin: 0px;
+ }
 
 .App {
   min-height: 100vh;
@@ -28,7 +32,7 @@ nav {
   color: #ebedf0;
   margin: 10px;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.9vw;
   transition: all .2s ease-in-out;
   text-shadow: 0 0 0 transparent, 0 0 10px #a5adb6, 0 0 20px rgba(145, 154, 162, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #63676a;
 }
@@ -79,6 +83,7 @@ button {
 .about-container {
   background-color: rgba(17, 11, 10, 0.547);
   margin: 10px;
+  overflow-x: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +108,7 @@ button {
 
 .about-me-container {
   margin: 10px;
-  height: 90vh;
+  height: 80vh;
   text-align: center;
   display: flex;
   flex-direction: column;
