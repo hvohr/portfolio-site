@@ -3,7 +3,7 @@ import '../Components/App/App.css';
 function Contact() {
   return (
     <section className='contact-container'>
-      <svg id="christmas-lights" viewBox="0 0 670 492">
+      <svg id="christmas-lights" viewBox="0 0 670 192">
         <path className="light-cord" d="M-673.8-29.1c17.3 23.7 38.1 34.3 63.6 48.8 45.4 25.7 93.4 39.1 145.4 44.4 58 6 112.1 6.2 164-9 64.2-18.8 113.7-51 113.7-51 13.3 17.3 28.1 25.3 50.1 34.5 20.3 8.5 43.8 17 66.1 23 30.1 8.1 67.1 8.4 99.1 8.3 66.5-0.1 134-3.3 197.4-17.8 30.3-6.9 76-24 89.3-32 9.3 4.7 22.4 16.1 34.7 22.8 34 18.6 73.2 33.8 111 42.8 46.1 11 93.6 5.6 137-12.8 14.4-6.1 56.6-26.1 65.7-38.5 8.8 15.1 102.8 33.1 151.5 32.5 68.4-0.8 142.2-10.5 196.7-55.9 9.7 11.9 28.3 20 42.5 25.2 35.5 12.9 76.3 22 113.9 24.9 50.2 3.9 100.3 3.9 150.1-5.3 25.6-4.7 50.6-14.2 74.4-24.8 6.7-3 36.4-14.8 43.1-20.1" />
         <path className="red-bulb bulb blink-1" d="M1351.5 76.9c-1.5-3.3-0.6-11-0.6-11 0-2.2-1.2-4-3.4-4h-7.1c-2.2 0-3.4 1.8-3.4 4 0 0 0.7 7.5-0.6 11 -1.2 3.5-6.2 7.8-6.2 13.4 0 8.9 6.2 16.1 13.7 16.1 7.6 0 13.7-7.2 13.7-16.1C1357.7 84.7 1353 80.2 1351.5 76.9z" />
         <path className="light-fixture" d="M1351.9 71.4c0 0.5-0.4 1-1 1h-14.1c-0.5 0-1-0.5-1-1l0.5-14.9c0-0.5 0.5-1 1-1h12.9c0.5 0 1 0.5 1 1L1351.9 71.4z" />
@@ -78,8 +78,16 @@ function Contact() {
         <path className="light-fixture" d="M-602.2 40.4c0 0.5-0.4 1-1 1h-14.1c-0.5 0-1-0.4-1-1l0.5-14.9c0-0.5 0.5-1 1-1h12.9c0.6 0 1 0.4 1 1L-602.2 40.4z" />
         <path className="light-fixture" d="M-611 26.9c-0.5-0.2-0.7-0.8-0.5-1.3l0 0c0.2-0.5 0.3-0.9 0.3-1.3l0 0c0-1.5-1.4-2.7-2.2-3.6l0 0c-0.5-0.6-0.7-1.5-0.8-2.4l0 0c-0.1-1.5 1-3.4 3.3-3.6l0 0 0.1 0 0.1 0c1.2 0 2.2 0.3 2.9 1l0 0c0.7 0.6 1 1.5 1 2.3l0 0c0 1.3-0.6 2.4-1.2 3.4l0 0c-0.4 0.6-0.9 1.1-1.4 1.5l0 0c0.2 0.5 0.3 1 0.3 1.5l0 0c0 0.6-0.1 1.3-0.4 2.1l0 0h0c-0.2 0.4-0.5 0.6-0.9 0.6l0 0C-610.7 27-610.9 26.9-611 26.9L-611 26.9zM-612.3 18.3c0 0.5 0.2 1.1 0.3 1.2l0 0c0.2 0.3 0.8 0.8 1.4 1.6l0 0c0.2-0.2 0.5-0.5 0.8-0.9l0 0c0.5-0.7 0.9-1.7 0.9-2.3l0 0c-0.1-0.7 0-1-1.9-1.2l0 0C-612.1 16.9-612.2 17.5-612.3 18.3L-612.3 18.3z" />
       </svg>
-      <a className='about-greeting-coffee' href="mailto: hollis.vohr@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a>
-      <a className='about-greeting-coffee' href="https://www.buymeacoffee.com/hollisvohr" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+      <section className='social-media-container'>
+        <a className='dribble-logo' href="https://dribbble.com/hollisvohr/shots" target="_blank" rel="noopener noreferrer"><img alt='dribble logo' className='dribble-logo' src={require('../Components/images/social (1).png')}></img></a>
+        <a className='instagram-logo' href="https://www.instagram.com/hollisvohr/" target="_blank" rel="noopener noreferrer"><img alt='instagram logo' className='instagram-logo' src={require('../Components/images/social (2).png')}></img></a>
+        <a className='github-logo' href="https://github.com/hvohr" target="_blank" rel="noopener noreferrer"><img className='github-logo' alt='github logo' src={require('../Components/images/social (3).png')}></img></a>
+        <a className='linkedin-logo' href="https://www.linkedin.com/in/hollisvohr/" target="_blank" rel="noopener noreferrer"><img className='linkedin-logo' alt='linkedin logo' src={require('../Components/images/social.png')}></img></a>
+      </section>
+      <section className='contact-small-container'>
+        <a className='about-greeting-email' href="mailto: hollis.vohr@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a>
+        <a className='about-greeting-coffee' href="https://www.buymeacoffee.com/hollisvohr" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+      </section>
     </section>
   )
 }
