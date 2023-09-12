@@ -83,6 +83,7 @@ button {
 .about-container {
   background-color: rgba(17, 11, 10, 0.547);
   margin: 10px;
+  width: 80vw;
   overflow-x: scroll;
   display: flex;
   flex-direction: column;
