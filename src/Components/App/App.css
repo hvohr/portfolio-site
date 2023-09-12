@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   min-height: 100vh;
   margin: 0px;
   background-image: url('../images/rustic-brick-wall-background.jpg');
@@ -23,19 +24,199 @@ nav {
   color: #ebedf0;
   margin: 10px;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.5vw;
+  transition: all .2s ease-in-out;
   text-shadow: 0 0 0 transparent, 0 0 10px #a5adb6, 0 0 20px rgba(145, 154, 162, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #63676a;
 }
- 
+
+.about-button.active,
+.contact-button.active,
+.projects-button.active {
+  animation: buzz 0.01s infinite alternate;
+  color: #ffffff;
+  transform: scale(1.1);
+  text-shadow: 0 0 0 transparent, 0 0 5px #d5d9dd, 0 0 10px rgba(213, 217, 220, 0.5), 0 0 20px #788088, 0 0 5px #7f8589, 0 0 100px #aeb1b3, 0 0 150px #b0bcc7, 0 0 250px #becbd4;
+}
+
+.about-button:hover,
+.contact-button:hover,
+.projects-button:hover {
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+  color: #ebedf0;
+  transform: scale(1.1);
+  text-shadow: 0 0 0 transparent, 0 0 5px #d5d9dd, 0 0 10px rgba(213, 217, 220, 0.5), 0 0 20px #788088, 0 0 5px #7f8589, 0 0 100px #aeb1b3, 0 0 150px #b0bcc7, 0 0 250px #becbd4;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+
 .home-button {
   font-family: 'neontubes';
-  font-size: 2.5vw;
+  font-size: 2.0vw;
   padding: 10px;
   text-decoration: none;
   margin: 10px;
-  border-radius: 20px;
-  border: 2px solid #ebedf0;
+  border-radius: 50px;
+  border: 2px solid #cfd4dc;
   color: #ebedf0;
   background: none;
-  box-shadow: 0 0 0 transparent, 0 0 10px #d5d9dd, 0 0 20px rgba(213, 217, 220, 0.5), 0 0 40px #788088, 0 0 100px #7f8589, 0 0 200px #aeb1b3, 0 0 300px #b0bcc7, 0 0 500px #becbd4;
-  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;}
+  box-shadow: 0 0 0 transparent, 0 0 5px #d5d9dd, 0 0 10px rgba(213, 217, 220, 0.5), 0 0 20px #788088, 0 0 5px #7f8589, 0 0 10px #aeb1b3, 0 0 150px #b0bcc7, 0 0 250px #becbd4;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+}
+
+.about-container {
+  background-color: rgba(17, 11, 10, 0.547);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px double #FABBAA;
+  border-radius: 20px;
+  -webkit-box-shadow:
+    inset 0 0 6px #BA051A,
+    inset 0 0 30px rgba(186, 5, 26, 0.3),
+    inset 0 0 90px rgba(186, 5, 26, 0.5),
+    0 0 6px #BA051A,
+    0 0 30px rgba(186, 5, 26, 0.3),
+    0 0 80px rgba(186, 5, 26, 0.5);
+  box-shadow:
+    inset 0 0 6px #BA051A,
+    inset 0 0 30px rgba(186, 5, 26, 0.3),
+    inset 0 0 90px rgba(186, 5, 26, 0.5),
+    0 0 6px #BA051A,
+    0 0 30px rgba(186, 5, 26, 0.3),
+    0 0 80px rgba(186, 5, 26, 0.5);
+}
+
+
+.about-me-container {
+  margin: 10px;
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
+  padding-top: 10px;
+  margin-top: 5px;
+  font-family: 'neontubes';
+  width: 90%;
+  border-radius: 50px;
+  font-weight: bolder;
+  font-size: 3.1vh;
+  /* text-shadow:
+    0px 0px 5px #9198a1,
+    0px 0px 10px #838c99,
+    0px 0px 10px #727a81,
+    0px 0px 80px rgba(97, 118, 139, 0.6),
+    0px 0px 100px rgba(116, 124, 133, 0.9);
+  color: #ffffff; */
+  text-shadow:
+    0px 0px 5px #10407a,
+    0px 0px 10px #165baf,
+    0px 0px 10px #0f3e78,
+    0px 0px 80px rgba(25, 84, 155, 0.6),
+    0px 0px 100px rgba(10, 57, 113, 0.9);
+  color: #c0d1cf;
+  ;
+}
+
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0.8;
+  }
+
+  43% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0.2;
+  }
+
+  46% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+
+  52% {
+    opacity: 0.8;
+  }
+
+  53% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 0.2;
+  }
+
+  56% {
+    opacity: 1;
+  }
+}
+
+.about-greeting-resume {
+  font-size: 3.5vh;
+  border: 5px solid #FABBAA;
+  -webkit-animation: blink 4s infinite alternate;
+  animation: blink 2s infinite alternate;
+}
+
+.about-greeting-coffee {
+  font-size: 3.0vh;
+  border: 3px solid #fff;
+}
+
+.about-greeting-resume,
+.about-greeting-coffee {
+  margin: 10px;
+  width: fit-content;
+  background: none;
+  text-align: center;
+  font-family: 'neontubes';
+  border-radius: 2rem;
+  padding: 10px 45px;
+  -webkit-box-shadow:
+    inset 0 0 6px #BA051A,
+    inset 0 0 40px rgba(186, 5, 26, 0.3),
+    inset 0 0 100px rgba(186, 5, 26, 0.5),
+    0 0 6px #BA051A,
+    0 0 40px rgba(186, 5, 26, 0.3),
+    0 0 100px rgba(186, 5, 26, 0.5);
+  box-shadow:
+    inset 0 0 6px #BA051A,
+    inset 0 0 40px rgba(186, 5, 26, 0.3),
+    inset 0 0 100px rgba(186, 5, 26, 0.5),
+    0 0 6px #BA051A,
+    0 0 40px rgba(186, 5, 26, 0.3),
+    0 0 100px rgba(186, 5, 26, 0.5);
+  text-shadow:
+    0px 0px 5px #318BF7,
+    0px 0px 10px #318BF7,
+    0px 0px 10px #318BF7,
+    0px 0px 80px rgba(49, 139, 247, 0.6),
+    0px 0px 100px rgba(49, 139, 247, 0.9);
+  color: #AFFCF4;
+  -webkit-border-radius: 55px;
+  border-radius: 55px
+}
