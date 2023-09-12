@@ -6,13 +6,6 @@
   font-style: normal;
 }
 
-.about-me {
-  text-align: center;
-  font-family: 'neontubes';
-  width: 50%;
-  color: white;
-}
-
 .name-container,
 .title-container {
   display: flex;

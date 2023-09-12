@@ -2,7 +2,7 @@ import '../Components/App/App.css';
 
 function Contact() {
   return (
-    <h1>Where Contact Goes!</h1>
+    <a className='about-greeting-coffee' href="https://www.buymeacoffee.com/hollisvohr" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
   )
 }
 
