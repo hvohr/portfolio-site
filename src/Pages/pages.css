@@ -18,7 +18,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  font-family: "neontubes";
+  font-family: 'neontubes';
   text-align: center;
 }
 
@@ -110,6 +110,12 @@
   100%{transform: rotate(10deg);}
 }
 
+.contact-container {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .swingimage {
   height: 50vh;
   width: 35vw;
@@ -117,4 +123,170 @@
   transform-origin: 50% 0;
   -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
   animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.contact-small-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+img.dribble-logo,
+img.github-logo,
+img.linkedin-logo,
+img.instagram-logo {
+  filter: drop-shadow(5px 7px 2px rgba(225, 9, 66, 0.4));
+  height: 10vh;
+  margin: 20px;
+  display: flex;
+  align-content: center;
+  transition: all .2s ease-in-out; 
+  margin: 50px;
+}
+
+img.dribble-logo:hover,
+img.github-logo:hover,
+img.linkedin-logo:hover,
+img.instagram-logo:hover {
+  transform: scale(1.1); 
+}
+
+#christmas-lights {
+  height: 20vh;
+  margin: 0;
+  position: relative;
+  width: 100vw;
+  /* z-index: 1000 */
+}
+
+.light-cord {
+  fill: none;
+  stroke: #6c6464;
+}
+
+.light-fixture {
+  fill: #0c311c;
+}
+
+.red-bulb {
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.green-bulb {
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.blue-bulb {
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.white-bulb {
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.gold-bulb {
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
+  stroke-miterlimit: 9;
+}
+
+
+/* Simply changing the opacity of the SVG fill to create the glow effect for the bulbs */
+
+.bulb {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: glow;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+  animation-name: glow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    fill-opacity: 0.45;
+  }
+  100% {
+    fill-opacity: 1
+  }
+}
+
+@keyframes glow {
+  0% {
+    fill-opacity: 0.45;
+  }
+  100% {
+    fill-opacity: 1.0
+  }
+}
+
+
+/* Made a set of ten animation delays to create a more random effect of lights blinking.  Simplest way without jumping through SVG hoops. */
+
+.blink-1 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.blink-2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.blink-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.blink-4 {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.blink-5 {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.blink-6 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.blink-7 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.blink-8 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.blink-9 {
+  -webkit-animation-delay: 0.95s;
+  animation-delay: 0.95s;
+}
+
+.blink-10 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
