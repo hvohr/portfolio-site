@@ -153,7 +153,7 @@ button {
   }
 }
 
-@keyframes blink {
+/* @keyframes blink {
   50% {
     opacity: 1;
   }
@@ -173,7 +173,7 @@ button {
   56% {
     opacity: 1;
   }
-}
+} */
 
 .about-greeting-resume {
   font-size: 3.5vh;
