@@ -18,7 +18,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  font-family: "neontubes";
+  font-family: 'neontubes';
   text-align: center;
 }
 
@@ -110,6 +110,12 @@
   100%{transform: rotate(10deg);}
 }
 
+.contact-container {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .swingimage {
   height: 50vh;
   width: 35vw;
@@ -117,4 +123,107 @@
   transform-origin: 50% 0;
   -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
   animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.redBulb {
+  fill: #CA2128;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.yellowBulb {
+  fill: #ffcc5e;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.greenBulb {
+  fill: #2D754A;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.blueBulb {
+  fill: #2C3EA8;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.blinkOne {
+  animation-delay: 0.6s;
+}
+
+.blinkTwo {
+  animation-delay: 2s;
+}
+
+.blinkThree {
+  animation-delay: 2s;
+}
+
+.blinkFour {
+  animation-delay: 6s;
+}
+
+.blinkFive {
+  animation-delay: 2.5s;
+}
+
+.blinkSix {
+  animation-delay: .3s;
+}
+
+.blinkSeven {
+  animation-delay: 2s;
+}
+
+.blinkEight {
+  animation-delay: .2s;
+}
+
+.blinkNine {
+  animation-delay: 0.95s;
+}
+
+.blinkTen {
+  animation-delay: 1.2s;
+}
+.blinkEleven{
+  animation-delay: 1.2s;
+}
+.blinkTwelve{
+  animation-delay: 0.6s;
+}
+.blinkThrteen{
+  animation-delay: 0.95s;
+}
+.blinkFour{
+  animation-delay: 2s;
+}
+.blinkblinkFteen{
+  animation-delay: 1.5s;
+}
+.blinkSixteen{
+  animation-delay: 0.6s;
+}
+  
+@keyframes blink {
+  0% {
+    fill-opacity: 0.165;
+  }
+  100% {
+    fill-opacity: 1;
+  }
 }

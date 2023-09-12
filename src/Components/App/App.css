@@ -8,7 +8,11 @@ body {
 }
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+svg {
+  height: 70vh;
 }
 
 nav {
