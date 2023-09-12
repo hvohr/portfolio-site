@@ -135,40 +135,40 @@
 
 .light-cord {
   fill: none;
-  stroke: #000000;
+  stroke: #6c6464;
 }
 
 .light-fixture {
-  fill: #303230;
+  fill: #103110;
 }
 
 .red-bulb {
-  fill: #c1080e;
-  filter: drop-shadow(5px 7px 2px rgba(236, 9, 9, 0.3));
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
   stroke-miterlimit: 9;
 }
 
 .green-bulb {
-  fill: #09883c;
-  filter: drop-shadow(5px 7px 2px rgba(47, 170, 58, 0.3));
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
   stroke-miterlimit: 9;
 }
 
 .blue-bulb {
-  fill: #203ad0;
-  filter: drop-shadow(5px 7px 2px rgba(43, 86, 202, 0.3));
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
   stroke-miterlimit: 9;
 }
 
 .white-bulb {
-  fill: #f4f3ed;
-  filter: drop-shadow(5px 7px 2px rgba(219, 222, 229, 0.3));
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
   stroke-miterlimit: 9;
 }
 
 .gold-bulb {
-  fill: #d8d82e;
-  filter: drop-shadow(5px 7px 2px rgba(201, 220, 92, 0.3));
+  fill: #f5f5e3;
+  filter: drop-shadow(5px 7px 2px rgba(238, 240, 221, 0.3));
   stroke-miterlimit: 9;
 }
 
