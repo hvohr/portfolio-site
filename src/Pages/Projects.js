@@ -1,3 +1,4 @@
+import '../Components/App/App.css';
 
 function Projects() {
   return (
