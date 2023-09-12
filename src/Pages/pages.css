@@ -125,105 +125,136 @@
   animation: swinging 3.5s ease-in-out forwards infinite;
 }
 
-.redBulb {
-  fill: #CA2128;
-  animation-name: blink;
+#christmas-lights {
+  height: 50vh;
+  margin: 0;
+  position: relative;
+  width: 100vw;
+  /* z-index: 1000 */
+}
+
+.light-cord {
+  fill: none;
+  stroke: #000000;
+}
+
+.light-fixture {
+  fill: #303230;
+}
+
+.red-bulb {
+  fill: #c1080e;
+  filter: drop-shadow(5px 7px 2px rgba(236, 9, 9, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.green-bulb {
+  fill: #09883c;
+  filter: drop-shadow(5px 7px 2px rgba(47, 170, 58, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.blue-bulb {
+  fill: #203ad0;
+  filter: drop-shadow(5px 7px 2px rgba(43, 86, 202, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.white-bulb {
+  fill: #f4f3ed;
+  filter: drop-shadow(5px 7px 2px rgba(219, 222, 229, 0.3));
+  stroke-miterlimit: 9;
+}
+
+.gold-bulb {
+  fill: #d8d82e;
+  filter: drop-shadow(5px 7px 2px rgba(201, 220, 92, 0.3));
+  stroke-miterlimit: 9;
+}
+
+
+/* Simply changing the opacity of the SVG fill to create the glow effect for the bulbs */
+
+.bulb {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: glow;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+  animation-name: glow;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
 }
 
-.yellowBulb {
-  fill: #ffcc5e;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
+@-webkit-keyframes glow {
+  0% {
+    fill-opacity: 0.45;
+  }
+  100% {
+    fill-opacity: 1
+  }
 }
 
-.greenBulb {
-  fill: #2D754A;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
+@keyframes glow {
+  0% {
+    fill-opacity: 0.45;
+  }
+  100% {
+    fill-opacity: 1.0
+  }
 }
 
-.blueBulb {
-  fill: #2C3EA8;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
 
-.blinkOne {
+/* Made a set of ten animation delays to create a more random effect of lights blinking.  Simplest way without jumping through SVG hoops. */
+
+.blink-1 {
+  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-.blinkTwo {
+.blink-2 {
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
-.blinkThree {
+.blink-3 {
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
-.blinkFour {
+.blink-4 {
+  -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
 
-.blinkFive {
+.blink-5 {
+  -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
 
-.blinkSix {
+.blink-6 {
+  -webkit-animation-delay: .3s;
   animation-delay: .3s;
 }
 
-.blinkSeven {
+.blink-7 {
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
-.blinkEight {
+.blink-8 {
+  -webkit-animation-delay: .2s;
   animation-delay: .2s;
 }
 
-.blinkNine {
+.blink-9 {
+  -webkit-animation-delay: 0.95s;
   animation-delay: 0.95s;
 }
 
-.blinkTen {
+.blink-10 {
+  -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
-}
-.blinkEleven{
-  animation-delay: 1.2s;
-}
-.blinkTwelve{
-  animation-delay: 0.6s;
-}
-.blinkThrteen{
-  animation-delay: 0.95s;
-}
-.blinkFour{
-  animation-delay: 2s;
-}
-.blinkblinkFteen{
-  animation-delay: 1.5s;
-}
-.blinkSixteen{
-  animation-delay: 0.6s;
-}
-  
-@keyframes blink {
-  0% {
-    fill-opacity: 0.165;
-  }
-  100% {
-    fill-opacity: 1;
-  }
 }
