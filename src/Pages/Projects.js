@@ -36,11 +36,11 @@ function Projects() {
           <p className='tech-used'>Technologies Used: ExpressJS, Javascript, ReactJS, HTML/CSS, Cypress, Webpack, FETCH API's, Knex, CORS</p>
           <a className='bare-mimimum-source' href="https://github.com/hvohr/bare-minimum" target="_blank" rel="noopener noreferrer"> View Source Code</a>
           <a className='clear-skies-source' href="https://bare-minimum.vercel.app/" target="_blank" rel="noopener noreferrer">View Deployed Link</a>
-          <button onClick={() => handleClose()}>Close</button>
+          <button className='view-more' onClick={() => handleClose()}>Close</button>
         </section>}
       </div>
       <div className='clear-skies-container'>
-        <h3 className='project-title'>Clear Skies</h3>
+        <h3 className='project-title'>ClearSkies</h3>
         <img className='project-image' src={require('../Components/images/2.png')}></img>
         <div>
           <button className='view-more' onClick={() => handleOpen('Clear')}>View More</button>

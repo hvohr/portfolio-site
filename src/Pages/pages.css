@@ -91,6 +91,7 @@
 }
 
 .project-image {
+  border-radius: 10px;
   height: 35vh;
   padding: 20px;
 }
@@ -101,12 +102,14 @@
 }
 
 .modal-container {
+  top: 50%;
+  left: 50%;
+  width: 80vh;
+  height: 80vh;
+  margin-top: -17em;
+  margin-left: -19em;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 90vw;
-  height: 90vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0);
 }
 
 
