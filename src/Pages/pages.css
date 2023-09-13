@@ -6,32 +6,109 @@
   font-style: normal;
 }
 
-.modal {
+.project-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bare-minimum-container,
+.clear-skies-container,
+.porfolio-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.view-more {
+  text-align: center;
+  font-family: 'neontubes';
+  font-size: 2.0vh;
+  color: white;
+  border-radius: 2rem;
+  border: 2px solid white;
+  padding: 3.5px 35px;
+  width: fit-content;
+  background: none;
+  -webkit-box-shadow:
+    inset 0 0 6px #e42633,
+    inset 0 0 40px #cc2e4b,
+    inset 0 0 70px #d21a3c,
+    0 0 6px #e42633,
+    0 0 40px #e42633,
+    0 0 100px #d21a3c;
+  box-shadow:
+    inset 0 0 6px #18189f,
+    inset 0 0 20px #18189f,
+    inset 0 0 80px #18189f,
+    0 0 6px #18189f,
+    0 0 20px #18189f,
+    0 0 80px #18189f;
+  text-shadow:
+    0px 0px 5px #ec0e0e,
+    0px 0px 10px #ec0e0e,
+    0px 0px 10px #ec0e0e,
+    0px 0px 80px #ec0e0e,
+    0px 0px 100px #ec0e0e;
+  color: #b6b3db;
+}
+
+.project-title {
+  margin: 0px;
+  font-family: 'neontubes';
+  font-size: 3.5vh;
+  color: white;
+  border-radius: 2rem;
+  border: 2px solid white;
+  padding: 10px 45px;
+  -webkit-box-shadow:
+    inset 0 0 6px #e42633,
+    inset 0 0 40px #cc2e4b,
+    inset 0 0 70px #d21a3c,
+    0 0 6px #e42633,
+    0 0 40px #e42633,
+    0 0 100px #d21a3c;
+  box-shadow:
+    inset 0 0 6px #18189f,
+    inset 0 0 20px #18189f,
+    inset 0 0 70px #18189f,
+    0 0 6px #18189f,
+    0 0 20px #18189f,
+    0 0 70px #18189f;
+  text-shadow:
+    0px 0px 5px #ec0e0e,
+    0px 0px 10px #ec0e0e,
+    0px 0px 10px #ec0e0e,
+    0px 0px 80px #ec0e0e,
+    0px 0px 100px #ec0e0e;
+  color: #b6b3db;
+  -webkit-border-radius: 30px;
+  border-radius: 10px
+}
+
+.project-image {
+  height: 35vh;
+  padding: 20px;
+}
+
+.project-description {
+  font-family: 'neontubes';
+  color: white;
+}
+
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  width: 90vw;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.modal-main {
-  position:fixed;
-  background: white;
-  width: 80%;
-  height: auto;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
-}
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -45,7 +122,7 @@
 }
 
 ::-webkit-scrollbar-corner {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .name-container,
@@ -82,7 +159,8 @@
 }
 
 .name-container {
-  font-size: 8vw;;
+  font-size: 8vw;
+  ;
 }
 
 .main .title-container {
@@ -140,20 +218,36 @@
   height: 90vh;
 }
 
-@-webkit-keyframes swinging{
-  0%{-webkit-transform: rotate(10deg);}
-  50%{-webkit-transform: rotate(-5deg)}
-  100%{-webkit-transform: rotate(10deg);}
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg)
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
 }
 
-@keyframes swinging{
-  0%{transform: rotate(10deg);}
-  50%{transform: rotate(-5deg)}
-  100%{transform: rotate(10deg);}
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg)
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
 }
 
 .contact-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-content: center;
 }
@@ -188,7 +282,7 @@ img.instagram-logo {
   margin: 20px;
   display: flex;
   align-content: center;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
   margin: 50px;
 }
 
@@ -196,7 +290,7 @@ img.dribble-logo:hover,
 img.github-logo:hover,
 img.linkedin-logo:hover,
 img.instagram-logo:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 #christmas-lights {
@@ -266,6 +360,7 @@ img.instagram-logo:hover {
   0% {
     fill-opacity: 0.45;
   }
+
   100% {
     fill-opacity: 1
   }
@@ -275,6 +370,7 @@ img.instagram-logo:hover {
   0% {
     fill-opacity: 0.45;
   }
+
   100% {
     fill-opacity: 1.0
   }
