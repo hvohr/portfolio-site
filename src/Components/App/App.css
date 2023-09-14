@@ -172,6 +172,11 @@ button {
     font-size: 2.5vh;
     text-align: center;
   }
+
+  .project-image {
+    height: 40vh;
+    margin-bottom: -20px;
+  }
   
   .project-image2 {
     border: 2px solid white;
@@ -343,6 +348,42 @@ button {
   color: #AFFCF4;
   -webkit-border-radius: 55px;
   border-radius: 55px
+}
+
+.about-greeting-source {
+  padding: 5px 40px;
+  color: #ffffff;
+  margin: 5px;
+  border: 2px solid #f7f4f4;
+  width: fit-content;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'neontubes';
+  border-radius: 2rem;
+  font-size: 2.0vh;
+  -webkit-box-shadow:
+  inset 0 0 6px #e42633,
+  inset 0 0 40px #cc2e4b,
+  inset 0 0 100px #d21a3c,
+  0 0 6px #e42633,
+  0 0 40px #e42633,
+  0 0 100px #d21a3c;
+box-shadow:
+  inset 0 0 6px #e42633,
+  inset 0 0 40px #cc2e4b,
+  inset 0 0 100px #d21a3c,
+  0 0 6px #e42633,
+  0 0 40px #e42633,
+  0 0 100px #d21a3c;
+text-shadow:
+  0px 0px 5px #318BF7,
+  0px 0px 10px #318BF7,
+  0px 0px 10px #318BF7,
+  0px 0px 80px rgba(49, 139, 247, 0.6),
+  0px 0px 100px rgba(49, 139, 247, 0.9);
+-webkit-border-radius: 55px;
+border-radius: 55px
 }
 
 .about-greeting-resume {
