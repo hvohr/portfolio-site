@@ -40,7 +40,8 @@
 }
 
 .name-container {
-  font-size: 8vw;;
+  font-size: 8vw;
+  ;
 }
 
 .main .title-container {
@@ -99,119 +100,137 @@
 }
 
 @keyframes swing {
-   from {
-        -moz-transform: rotate(3deg);
-        -webkit-transform: rotate(3deg);
-        transform: rotate(3deg);
-    }
-    to {
-      transform: rotate(-3deg);
- }
-}
-   
-   .contact-container {
-   display: flex;
-     flex-direction: column;
-     align-content: center;
-   }
-   
-  .strip {
-    position: relative;
-    width: 18px;
-    height: 2px;
-    right: 1px;
-    top: 4px;
-    background-color: rgb(65, 71, 66);
+  from {
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
   }
-  
-  .strip:nth-of-type(2) {
-    top: 7px;
-  }
-  
-  .strip:nth-of-type(3) {
-    top: 10px;
-  }
-  
-  .home-bulb {
-    position: relative;
-    -webkit-animation: blink 5s infinite alternate;
-    animation: blink 5s infinite alternate;
-    width: 40px;
-    height: 40px;
-    left: 80px;
-    bottom: 2px;
-    z-index: -1;
-    background-color: rgb(240, 235, 216, 0.9);
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
-    -moz-box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
-    box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
-  }
-  
-  .bracket {
-    position: relative;
-    background-color: transparent;
-    width: 10px;
-    height: 5px;
-    border-radius: 5px / 2.5px;
-    left: 14px;
-    border: black solid 1px;
-  }
-  
-  .bracket:nth-of-type(2) {
-    top: -3px;
-  }
-  
-  .bracket:nth-of-type(3) {
-    top: -6px;
-  }
-  
-  .wire {
-    position: relative;
-    left: 98px;
-    height: 200px;
-    width: 4px;
-  }
-  
-  .wire {
-    position: relative;
-    left: 98px;
-    height: 200px;
-    width: 4px;
-    background-color: black;
-  }
-  
-  .light-section {
-    width: 200px;
-    height: 500px;
-    margin-left: 50px;
-    animation: swing 1s infinite ease-in-out alternate;
-    transform-origin: top;
-    -moz-transform-origin: top;
-    -webkit-transform-origin: top;
-  }
-  
-  .fixture {
-    position: relative;
-    background-color: grey;
-    width: 16px;
-    height: 20px;
-    left: 92px;
-  }
-@-webkit-keyframes swinging{
-  0%{-webkit-transform: rotate(10deg);}
-  50%{-webkit-transform: rotate(-5deg)}
-  100%{-webkit-transform: rotate(10deg);}
-}
 
-@keyframes swinging{
-  0%{transform: rotate(10deg);}
-  50%{transform: rotate(-5deg)}
-  100%{transform: rotate(10deg);}
+  to {
+    transform: rotate(-3deg);
+  }
 }
 
 .contact-container {
-  display:flex;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.strip {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  right: 1px;
+  top: 4px;
+  background-color: rgb(65, 71, 66);
+}
+
+.strip:nth-of-type(2) {
+  top: 7px;
+}
+
+.strip:nth-of-type(3) {
+  top: 10px;
+}
+
+.home-bulb {
+  position: relative;
+  -webkit-animation: blink 5s infinite alternate;
+  animation: blink 5s infinite alternate;
+  width: 40px;
+  height: 40px;
+  left: 80px;
+  bottom: 2px;
+  z-index: -1;
+  background-color: rgb(240, 235, 216, 0.9);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
+  -moz-box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
+  box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
+}
+
+.bracket {
+  position: relative;
+  background-color: transparent;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px / 2.5px;
+  left: 14px;
+  border: black solid 1px;
+}
+
+.bracket:nth-of-type(2) {
+  top: -3px;
+}
+
+.bracket:nth-of-type(3) {
+  top: -6px;
+}
+
+.wire {
+  position: relative;
+  left: 98px;
+  height: 200px;
+  width: 4px;
+}
+
+.wire {
+  position: relative;
+  left: 98px;
+  height: 200px;
+  width: 4px;
+  background-color: black;
+}
+
+.light-section {
+  width: 200px;
+  height: 80vh;
+  margin-left: 50px;
+  animation: swing 1s infinite ease-in-out alternate;
+  transform-origin: top;
+  -moz-transform-origin: top;
+  -webkit-transform-origin: top;
+}
+
+.fixture {
+  position: relative;
+  background-color: grey;
+  width: 16px;
+  height: 20px;
+  left: 92px;
+}
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg)
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg)
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.contact-container {
+  display: flex;
   flex-direction: column;
   align-content: center;
 }
@@ -246,7 +265,7 @@ img.instagram-logo {
   margin: 20px;
   display: flex;
   align-content: center;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
   margin: 50px;
 }
 
@@ -254,7 +273,7 @@ img.dribble-logo:hover,
 img.github-logo:hover,
 img.linkedin-logo:hover,
 img.instagram-logo:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 #christmas-lights {
@@ -320,6 +339,7 @@ img.instagram-logo:hover {
   0% {
     fill-opacity: 0.45;
   }
+
   100% {
     fill-opacity: 1
   }
@@ -329,6 +349,7 @@ img.instagram-logo:hover {
   0% {
     fill-opacity: 0.45;
   }
+
   100% {
     fill-opacity: 1.0
   }
@@ -407,6 +428,7 @@ svg {
 }
 
 nav {
+  background-color: rgba(0, 0, 0, 0.563);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -595,7 +617,7 @@ button {
   margin-top: 100px;
   margin-left: 60px;
   width: 60vw;
-  height: 65vh;
+  height: 50vh;
   overflow-x: scroll;
   display: flex;
   flex-direction: column;
@@ -620,7 +642,7 @@ button {
 
 
 .about-me-container {
-  height: 60vh;
+  height: 80vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -783,6 +805,28 @@ button {
     margin-left: 0px;
   }
 
+  .about-me-container {
+    display: flex;
+    margin-top: 30px;
+    height: 70vh;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .about-me {
+    font-size: 2vh;
+  }
+
+  .about-container {
+    margin: 0px;
+  }
+
+  .second-container {
+    display: flex;
+    height: 70vh;
+    margin-top: 0px;
+  }
+
   .light-section {
     display: none;
   }
@@ -801,6 +845,7 @@ button {
   .home-container {
     display: flex;
     height: 50vh;
+    overflow: clip;
     justify-content: center;
   }
 
@@ -838,9 +883,8 @@ button {
   }
 
   nav {
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     flex-direction: column;
   }
 }
-
-
