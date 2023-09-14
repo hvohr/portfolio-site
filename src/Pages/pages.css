@@ -851,6 +851,7 @@ button {
   }
 
   .about-container {
+    width: 46vh;
     margin: 0px;
   }
 
@@ -881,7 +882,11 @@ button {
   .social-media-container,
   .contact-small-container {
     flex-wrap: wrap;
-    margin: 5px;
+    margin: 0px;
+  }
+
+  .social-media-container {
+    margin-top: -45px;
   }
 
   .title-container {
@@ -900,7 +905,7 @@ button {
   img.github-logo,
   img.linkedin-logo,
   img.instagram-logo {
-    height: 5vh;
+    height: 5.6vh;
   }
 
   .about-greeting-email,
