@@ -24,7 +24,8 @@
   justify-content: center;
 }
 
-.view-more {
+.view-more,
+.view-more-close {
   text-align: center;
   font-family: 'neontubes';
   font-size: 2.0vh;
