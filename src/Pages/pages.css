@@ -15,6 +15,7 @@
   display: flex;
   margin-left: 50px;
   height: 90vh;
+  width: 50vw;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -41,7 +42,6 @@
 
 .name-container {
   font-size: 8vw;
-  ;
 }
 
 .main .title-container {
@@ -802,6 +802,11 @@ button {
 
 @media screen and (max-width: 600px) {
   .main {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    margin: 0px;
+    width:fit-content;
     margin-left: 0px;
   }
 
@@ -868,7 +873,6 @@ button {
 
   .home-container {
     display: flex;
-    height: 50vh;
     overflow: clip;
     justify-content: center;
   }
@@ -876,27 +880,43 @@ button {
   .social-media-container,
   .contact-small-container {
     flex-wrap: wrap;
-  }
-
-  .main {
-    display: flex;
-    height: 50vh;
-    justify-content: center;
-    margin: 0px;
+    margin: 5px;
   }
 
   .title-container {
+    align-content: center;
+    justify-content:center;
+    text-align: center;
     flex-direction: column;
   }
 
   .name,
   .first-last {
-    font-size: 8vh;
+    font-size: 7vh;
   }
+
+  img.dribble-logo,
+  img.github-logo,
+  img.linkedin-logo,
+  img.instagram-logo {
+    height: 5vh;
+  }
+
+  .about-greeting-email,
+  .about-greeting-coffee {
+    font-size: 2vh;
+  }
+
+  .name-container {
+    width: fit-content;
+    justify-content: center;
+  }
+
 
   .title-original {
     font-size: 7vh;
-    margin-left: 15px;
+    margin-left: 25px;
+    justify-content: center;
   }
 
   .title-last {
@@ -904,7 +924,7 @@ button {
   }
 
   .title {
-    font-size: 8vh;
+    font-size: 7vh;
   }
 
   nav {
