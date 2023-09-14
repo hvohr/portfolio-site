@@ -68,11 +68,12 @@ function Projects() {
         <button className='view-more-close' onClick={() => handleClose()}>Close</button>
       </section>}
       {showClear && <section className='modal-container'>
+        <button className='view-more-close' onClick={() => handleClose()}><img className='exit' src={require('../Components/images/close.png')}/></button>
+        <img className='project-image2' src={require('../Components/images/clearskies.png')} />
         <p className='project-description'>Welcome to ClearSkies! A weather application that lets a user know a cities current and daily weather. This app also lets you search cities and view real time weather information! It is only available to people in the US and to get the full experience, make sure you have location services turned on - this allows ClearSkies to obtain your current weather right outside your front door. I hope you enjoy ClearSkies.</p>
         <p className='tech-used'>Technologies Used: Javascript, ReactJS, HTML/CSS, Cypress, Webpack, FETCH API's</p>
         <a className='view-more-close' href="https://github.com/hvohr/clearskies" target="_blank" rel="noopener noreferrer">View Source Code</a>
         <a className='view-more-close' href="https://clearskies.vercel.app/" target="_blank" rel="noopener noreferrer">View Deployed Link</a>
-        <button className='view-more-close' onClick={() => handleClose()}>Close</button>
       </section>}
     </section>
   )

@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+.second-container {
+margin-top: 65px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .project-container {
   display: flex;
   margin-top: 30px;
@@ -21,80 +28,69 @@
   flex-direction: column;
   text-align: center;
   align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
-.view-more,
 .view-more-close {
+  border: none;
+  background-color: black;
+  width: 55vw;
+  text-align: left;
+}
+
+.exit {
+  height: 5vh;
+  filter: drop-shadow(5px 7px 2px rgba(225, 9, 9, 0.4));
+  border: none;
+}
+
+.view-more {
   text-align: center;
   font-family: 'neontubes';
   font-size: 2.5vh;
   color: white;
-  border-radius: 2rem;
-  border: 2px solid white;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 1px solid white;
   padding: 3.5px 35px;
   width: fit-content;
-  background: none;
-  -webkit-box-shadow:
-    inset 0 0 6px #e42633,
-    inset 0 0 40px #cc2e4b,
-    inset 0 0 70px #d21a3c,
-    0 0 6px #e42633,
-    0 0 40px #e42633,
-    0 0 100px #d21a3c;
-  box-shadow:
-    inset 0 0 6px #18189f,
-    inset 0 0 20px #18189f,
-    inset 0 0 80px #18189f,
-    0 0 6px #18189f,
-    0 0 20px #18189f,
-    0 0 80px #18189f;
-  text-shadow:
-    0px 0px 5px #ec0e0e,
-    0px 0px 10px #ec0e0e,
-    0px 0px 10px #ec0e0e,
-    0px 0px 80px #ec0e0e,
-    0px 0px 100px #ec0e0e;
-  color: #b6b3db;
+  color: #d4eaff;
+  background-color: rgba(0, 0, 0, 0.539);
+  box-shadow: inset 0 0 5px #2783d9,
+  inset 0 0 5px #2783d9,
+  inset 0 0 20px #2783d9, 0 0 0 transparent, 0 0 5px #2783d9, 0 0 5px #2783d9, 0 0 5px #2783d9, 0 0 5px;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f40505, 0 0 20px #f40505, 0 0 40px #f40505, 0 0 100px #f40505, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #f40505, 0 0 1000px #f40505;
+  -webkit-border-radius: 10px;
 }
 
 .project-title {
-  margin: 0px;
+  font-size: 3.0vh;
+  border: 1px solid #fff;
+  margin: 10px;
+  width: fit-content;
+  background: none;
+  text-align: center;
   font-family: 'neontubes';
-  font-size: 3.5vh;
-  color: white;
-  border-radius: 2rem;
-  border: 2px solid white;
   padding: 10px 45px;
-  -webkit-box-shadow:
-    inset 0 0 6px #e42633,
-    inset 0 0 40px #cc2e4b,
-    inset 0 0 70px #d21a3c,
-    0 0 6px #e42633,
-    0 0 40px #e42633,
-    0 0 100px #d21a3c;
-  box-shadow:
-    inset 0 0 6px #18189f,
-    inset 0 0 20px #18189f,
-    inset 0 0 70px #18189f,
-    0 0 6px #18189f,
-    0 0 20px #18189f,
-    0 0 70px #18189f;
-  text-shadow:
-    0px 0px 5px #ec0e0e,
-    0px 0px 10px #ec0e0e,
-    0px 0px 10px #ec0e0e,
-    0px 0px 80px #ec0e0e,
-    0px 0px 100px #ec0e0e;
-  color: #b6b3db;
-  -webkit-border-radius: 30px;
-  border-radius: 10px
+  color: #d4eaff;
+  background-color: rgba(0, 0, 0, 0.539);
+  box-shadow: inset 0 0 5px #2783d9,
+  inset 0 0 5px #2783d9,
+  inset 0 0 20px #2783d9, 0 0 0 transparent, 0 0 5px #2783d9, 0 0 5px #2783d9, 0 0 5px #2783d9, 0 0 5px;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f40505, 0 0 20px #f40505, 0 0 40px #f40505, 0 0 100px #f40505, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #f40505, 0 0 1000px #f40505;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .project-image {
-  border-radius: 10px;
   height: 35vh;
   padding: 20px;
+}
+
+.tech-used {
+  font-family: 'neontubes';
+  color: rgb(224, 16, 16);
 }
 
 .project-description {
@@ -102,15 +98,34 @@
   color: white;
 }
 
+.project-image2 {
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 40vh;
+  padding: 5px;
+}
+
 .modal-container {
+  border: 1px solid white;
+  box-shadow:
+  inset 0 0 2px #6c6cc1,
+    inset 0 0 4px #6c6cc1,
+    inset 0 0 8px #6c6cc1,
+    0 0 6px #6c6cc1,
+    0 0 20px #6c6cc1,
+    0 0 80px #6c6cc1;
+  border-radius: 20px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 65vh;
   top: 50%;
   left: 50%;
-  width: 100vh;
-  height: 80vh;
-  margin-top: -17em;
-  margin-left: -25em;
-  position: fixed;
-  background-color: rgba(0, 0, 0);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(18, 17, 17, 0.85);
 }
 
 
@@ -259,6 +274,8 @@
 
 .home-bulb {
   position: relative;
+  -webkit-animation: blink 5s infinite alternate;
+  animation: blink 5s infinite alternate;
   width: 40px;
   height: 40px;
   left: 80px;

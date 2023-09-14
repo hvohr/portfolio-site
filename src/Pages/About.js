@@ -3,6 +3,20 @@ import '../Components/App/App.css';
 function About() {
   return (
     <section className='about-me-container'>
+       <section className='light-section'>
+          <div className="wire"></div>
+          <div className="fixture">
+            <div className="strip"></div>
+            <div className="strip"></div>
+            <div className="strip"></div>
+          </div>
+          <div className="home-bulb">
+            <div className="bracket"></div>
+            <div className="bracket"></div>
+            <div className="bracket"></div>
+          </div>
+      </section>
+      <section className='second-container'>
       <section className='about-container'>
         <p className='about-me'>
           Welcome! My name is Hollis and I live in Denver, Colorado.
@@ -16,6 +30,7 @@ function About() {
         </p>
       </section>
       <a className='about-greeting-resume' href="https://docs.google.com/document/d/1YUktJ-xHPeqUAHHXysLYoIe6Oc7_0_wwhb_tTCGcAhM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+      </section>
     </section>
   )
 }
