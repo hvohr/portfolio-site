@@ -803,7 +803,7 @@ button {
 @media screen and (max-width: 600px) {
   .main {
     display: flex;
-    height: 60vh;
+    height: 50vh;
     justify-content: center;
     margin: 0px;
     width:fit-content;
@@ -872,6 +872,7 @@ button {
   }
 
   .home-container {
+    height: 50vh;
     display: flex;
     overflow: clip;
     justify-content: center;
@@ -911,7 +912,6 @@ button {
     width: fit-content;
     justify-content: center;
   }
-
 
   .title-original {
     font-size: 7vh;
