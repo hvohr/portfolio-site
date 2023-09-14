@@ -813,8 +813,36 @@ button {
     align-content: center;
   }
 
-  .about-me {
+  .project-title,
+  .view-more {
+    margin-bottom: -20px;
     font-size: 2vh;
+  }
+
+  .clear-skies-container,
+  .bare-minimum-container,
+  .porfolio-container {
+    margin: 50px;
+    padding: 15px;
+  }
+
+  .about-me,
+  .project-description,
+  .tech-used {
+    font-size: 2vh;
+  }
+
+  .view-more-close {
+    width: 80vw;
+  }
+
+  .modal-container {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .project-image2 {
+    height: 25vh;
   }
 
   .about-container {
@@ -838,10 +866,6 @@ button {
     font-size: 3vh;
   }
 
-  .main {
-    height: 50vh;
-  }
-
   .home-container {
     display: flex;
     height: 50vh;
@@ -856,6 +880,7 @@ button {
 
   .main {
     display: flex;
+    height: 50vh;
     justify-content: center;
     margin: 0px;
   }
