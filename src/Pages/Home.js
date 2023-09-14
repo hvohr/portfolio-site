@@ -13,7 +13,19 @@ function Home() {
           <div className='title-last'>Developer</div>
         </div>
       </section>
-      <img className="swingimage" alt='swinging hanging lamp' src={require('../Components/images/Contemporary-Hanging-Lamp-PNG-Image.png')} />
+      <section className='light-section'>
+          <div className="wire"></div>
+          <div className="fixture">
+            <div className="strip"></div>
+            <div className="strip"></div>
+            <div className="strip"></div>
+          </div>
+          <div className="home-bulb">
+            <div className="bracket"></div>
+            <div className="bracket"></div>
+            <div className="bracket"></div>
+          </div>
+      </section>
     </section>
   )
 }
