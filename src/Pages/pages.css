@@ -220,33 +220,17 @@
 .home-container {
   display: flex;
   height: 90vh;
+  min-width: 100vw;
 }
 
-@-webkit-keyframes swinging {
-  0% {
-    -webkit-transform: rotate(10deg);
+@keyframes swing {
+  from {
+      -moz-transform: rotate(3deg);
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
   }
-
-  50% {
-    -webkit-transform: rotate(-5deg)
-  }
-
-  100% {
-    -webkit-transform: rotate(10deg);
-  }
-}
-
-@keyframes swinging {
-  0% {
-    transform: rotate(10deg);
-  }
-
-  50% {
-    transform: rotate(-5deg)
-  }
-
-  100% {
-    transform: rotate(10deg);
+  to {
+      transform: rotate(-3deg);
   }
 }
 
@@ -256,13 +240,79 @@
   align-content: center;
 }
 
-.swingimage {
-  height: 50vh;
-  width: 35vw;
-  -webkit-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-  animation: swinging 3.5s ease-in-out forwards infinite;
+.strip {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  right: 1px;
+  top: 4px;
+  background-color: rgb(65, 71, 66);
+}
+
+.strip:nth-of-type(2) {
+  top: 7px;
+}
+
+.strip:nth-of-type(3) {
+  top: 10px;
+}
+
+.home-bulb {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  left: 80px;
+  bottom: 2px;
+  z-index: -1;
+  background-color: rgb(240, 235, 216, 0.9);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
+  -moz-box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
+  box-shadow: 0px 0px 300px 77px rgba(235, 209, 164, 1);
+}
+
+.bracket {
+  position: relative;
+  background-color: transparent;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px / 2.5px;
+  left: 14px;
+  border: black solid 1px;
+}
+
+.bracket:nth-of-type(2) {
+  top: -3px;
+}
+
+.bracket:nth-of-type(3) {
+  top: -6px;
+}
+
+.wire {
+  position: relative;
+  left: 98px;
+  height: 200px;
+  width: 4px;
+  background-color: black;
+}
+
+.light-section {
+  width: 200px;
+  height: 500px;
+  margin-left: 50px;
+  animation: swing 1s infinite ease-in-out alternate;
+  transform-origin: top;
+  -moz-transform-origin: top;
+  -webkit-transform-origin: top;
+}
+
+.fixture {
+  position: relative;
+  background-color: grey;
+  width: 16px;
+  height: 20px;
+  left: 92px;
 }
 
 .contact-small-container {
@@ -345,8 +395,6 @@ img.instagram-logo:hover {
 }
 
 
-/* Simply changing the opacity of the SVG fill to create the glow effect for the bulbs */
-
 .bulb {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: glow;
@@ -381,7 +429,6 @@ img.instagram-logo:hover {
 }
 
 
-/* Made a set of ten animation delays to create a more random effect of lights blinking.  Simplest way without jumping through SVG hoops. */
 
 .blink-1 {
   -webkit-animation-delay: 0.6s;
