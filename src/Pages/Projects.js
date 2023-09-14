@@ -35,21 +35,21 @@ function Projects() {
             <h3 className='project-title'>Bare Minimum</h3>
             <img className='project-image' src={require('../Components/images/Untitled design (4).png')}></img>
             <div>
-              {!disableView && <button className='view-more' onClick={() => handleOpen('BareMin')}>View More</button>}
+              {!disableView && <button className='view-more' onClick={() => handleOpen('BareMin')}>Learn More</button>}
             </div>
           </div>
           <div className='clear-skies-container'>
             <h3 className='project-title'>ClearSkies</h3>
             <img className='project-image' src={require('../Components/images/2.png')}></img>
             <div>
-              {!disableView && <button className='view-more' onClick={() => handleOpen('Clear')}>View More</button>}
+              {!disableView && <button className='view-more' onClick={() => handleOpen('Clear')}>Learn More</button>}
             </div>
           </div>
           <div className='porfolio-container'>
             <h3 className='project-title'>Portfolio</h3>
             <img className='project-image' src={require('../Components/images/3.png')}></img>
             <div>
-              {!disableView && <button className='view-more' onClick={() => handleOpen('Port')}>View More</button>}
+              {!disableView && <button className='view-more' onClick={() => handleOpen('Port')}>Learn More</button>}
             </div>
           </div>
         </section>
@@ -70,8 +70,8 @@ function Projects() {
       {showClear && <section className='modal-container'>
         <p className='project-description'>Welcome to ClearSkies! A weather application that lets a user know a cities current and daily weather. This app also lets you search cities and view real time weather information! It is only available to people in the US and to get the full experience, make sure you have location services turned on - this allows ClearSkies to obtain your current weather right outside your front door. I hope you enjoy ClearSkies.</p>
         <p className='tech-used'>Technologies Used: Javascript, ReactJS, HTML/CSS, Cypress, Webpack, FETCH API's</p>
-        <a className='clear-skies-source' href="https://github.com/hvohr/clearskies" target="_blank" rel="noopener noreferrer">View Source Code</a>
-        <a className='deployed-link' href="https://clearskies.vercel.app/" target="_blank" rel="noopener noreferrer">View Deployed Link</a>
+        <a className='view-more-close' href="https://github.com/hvohr/clearskies" target="_blank" rel="noopener noreferrer">View Source Code</a>
+        <a className='view-more-close' href="https://clearskies.vercel.app/" target="_blank" rel="noopener noreferrer">View Deployed Link</a>
         <button className='view-more-close' onClick={() => handleClose()}>Close</button>
       </section>}
     </section>
