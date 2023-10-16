@@ -504,6 +504,7 @@ button {
   flex-wrap: wrap;
 }
 
+
 .bare-minimum-container,
 .clear-skies-container,
 .porfolio-container,
@@ -519,14 +520,15 @@ button {
 
 .view-more-close {
   border: none;
+  margin-top: 8px;
   background-color: rgba(0, 0, 0, 0);
-  width: 55vw;
+  width: 850px;
   text-align: left;
 }
 
 .exit {
   background-color: none;
-  height: 3.5vh;
+  height: 30px;
   filter: drop-shadow(5px 7px 2px rgba(225, 9, 9, 0.4));
   border: none;
 }
@@ -594,6 +596,21 @@ button {
 }
 
 .modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 55%;
+  width: 700px;
+  height: 550px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.modal-container2 {
+  height: 450px;
+  width: 700px;
   border: 1px solid white;
   box-shadow: inset 0 0 5px #2783d9,
     inset 0 0 5px #2783d9,
@@ -605,7 +622,6 @@ button {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  height: 65vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -801,7 +817,44 @@ button {
   animation: blink 2s infinite alternate;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+
+  .view-more-close {
+    width: 700px;
+  }
+
+  .exit {
+    height: 25px;
+  }
+
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    width: 480px;
+    height: 480px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+  .modal-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    width: 600px;
+    height: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
   .main {
     display: flex;
     height: 50vh;
@@ -840,12 +893,21 @@ button {
   }
 
   .view-more-close {
-    width: 80vw;
+    width: 95vw;
   }
 
   .modal-container {
     width: 80vw;
+    height: 62vh;
+  }
+
+  .modal-container2 {
+    width: 80vw;
     height: 50vh;
+  }
+
+  .exit {
+    height: 25px;
   }
 
   .project-image2 {
@@ -932,6 +994,10 @@ button {
 
   .title {
     font-size: 7vh;
+  }
+
+  .project-container {
+    margin-top: 0px;
   }
 
   nav {
