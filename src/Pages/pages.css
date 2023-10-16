@@ -506,7 +506,8 @@ button {
 
 .bare-minimum-container,
 .clear-skies-container,
-.porfolio-container {
+.porfolio-container,
+.knit-container {
   margin: 50px;
   display: flex;
   flex-direction: column;
@@ -826,7 +827,8 @@ button {
 
   .clear-skies-container,
   .bare-minimum-container,
-  .porfolio-container {
+  .porfolio-container,
+  .knit-container {
     margin: 50px;
     padding: 15px;
   }
